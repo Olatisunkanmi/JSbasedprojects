@@ -1,0 +1,228 @@
+body{
+   transition: all 0.75s;
+   
+}
+
+#ul{
+    /* list-style-type: lower-roman; */
+
+}
+body{
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+    background: linear-gradient(to right,rgb(86, 226, 86),yellow);
+}
+
+h1{
+    font: 600 3.5em, 'Raleway';
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h3{
+    font: 900 1em sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+}
+
+.input{
+    text-align: center;
+}
+
+
+
+#ul > li{
+    /* border: 1px solid black; */
+    padding: 2px;
+    width: fit-content;
+    margin: 5px;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+}
+
+/*  tip btn */
+
+.tip-btn{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: inherit;
+    border: white solid 5px;
+    box-shadow:  rgba(0, 0, 0, 0.5);
+}
+
+.tip-btn:hover{
+    background-color: lemonchiffon;
+    color: inherit;
+    border: inherit solid;
+}
+
+/* Pig game  */
+
+.pig-game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 70%;
+    background: rgba(119, 113, 113, 0.4);
+    position: relative;
+    top: 10rem;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+.player {
+    flex: 50%;
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.75s;
+  }
+  
+
+  .name {
+    position: relative;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .score {
+    font-size: 8rem;
+    font-weight: 300;
+    color: #c7365f;
+    margin-bottom: auto;
+  }
+  
+  .active {
+    background-color: rgba(45, 92, 246, 0.4);
+  }
+  .player--active .name {
+    font-weight: 700;
+  }
+  .player--active .score {
+    font-weight: 400;
+  }
+  
+  .player--active .current {
+    opacity: 1;
+  }
+
+.current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 50%;
+    padding: 1.2rem;
+    text-align: center;
+    transition: all 0.75s;
+  }
+
+  .current-label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #ddd;
+  }
+  
+  .current-score {
+    font-size: 3.5rem;
+  }
+
+  .btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #444;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.2s;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 0.7rem 2.5rem;
+    border-radius: 50rem;
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  } 
+
+  .btn::first-letter {
+    font-size: 2.4rem;
+    display: inline-block;
+    margin-right: 0.7rem;
+  }
+  
+  .btn--new {
+    top: 36rem;
+  }
+  .btn--roll {
+    top: 69.3rem;
+  }
+  .btn--hold {
+    top: 76.1rem;
+  }
+  
+  .btn:active {
+    transform: translate(-50%, 3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 46.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #c7365f;
+}
+
+.hidden {
+  display: none;
+}
+
+.winner{
+  font-size: 30px;
+  color: #b81543;
+  font-weight: bolder;
+}
