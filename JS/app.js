@@ -61,8 +61,8 @@ const nextPlayer = () => {
 
 
 holdBtn.addEventListener('click', function() {
-  scores[activePlayer] += roundScore;
-  
+    scores[activePlayer] += roundScore;
+
   document.querySelector('#score-' + activePlayer). textContent = scores[activePlayer];
 
 if(scores[activePlayer] >= 20){
@@ -70,10 +70,7 @@ if(scores[activePlayer] >= 20){
       document.querySelector('#name-' + activePlayer ).textContent = 'WINNER !';
       document.querySelector('.player-' + activePlayer).classList.remove('active'); 
       document.querySelector('.dice').style.display = 'none';
-      // document.getElementById('score-0').textContent ='0';
-      // document.getElementById('score-1').textContent ='0';
-      // document.getElementById('current-0').textContent ='0';
-      // document.getElementById('current-1').textContent ='0';
+    
   
  } else { nextPlayer();}
 
@@ -107,31 +104,3 @@ function init () {
 
 
 
-
-
-
-  //  calculator
-var one = document.getElementById('one');
-var two = document.getElementById('two');
-var three = document.getElementById('three');
-var four = document.getElementById('four');
-var plus = document.getElementById('plus');
-var equals = document.getElementById('equals');
-var resultResult = document.getElementById('display');
-
-var oneclick =  one.addEventListener('click', function(){
-  return 1;
-})
-
-var twoclick = two.addEventListener('click', function(){
-  return 2; 
-})
-
-var plus = plus.addEventListener('click', function(){
-  return '+';
-})
-
-var displayResult = equals.addEventListener('click', function (){
-  
-
-})
