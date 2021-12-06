@@ -185,9 +185,26 @@ html {
     top: 76.1rem;
   }
 
-  .btn--input{
-    top: 59rem;
+  .btn--mode{
+    top: 36rem;
+   left: 30%;
+   box-shadow: rgba(94, 80, 80, 0.5);
+   border-radius: 5px;
+   box-shadow: 0 1.75rem 3.5rem rgba(0, 0.5, 0, 0.5);
+   background-color: inherit;
+   backdrop-filter: blur(10px);
+   color: white;
+   
+  }
 
+  .btn--mode:hover{
+   background-color: salmon;
+
+  }
+
+  .btn--input{
+    top: 57.2rem;
+    
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -217,10 +234,57 @@ html {
     outline: none;
   }
 
+  #winnngBoard {
+    
+      top: 64rem;
+  
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #444;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 400;
+      transition: all 0.2s;
+      /* background-color: white; */
+      background-color: inherit;
+      backdrop-filter: blur(10px);
+      padding: 0.7rem 2.5rem;
+      border-radius: 50rem;
+      box-shadow: 0 1.75rem 3.5rem rgba(0, 0.5, 0, 0.5);
+    }
+
+    #enterWin {
+
+      top: 50rem;
+      display: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #444;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+     font-weight: 400;
+      transition: all 0.2s;
+      /* background-color: white; */
+      background-color: inherit);
+      backdrop-filter: blur(10px);
+      padding: 0.7rem 2.5rem;
+      border-radius: 50rem;
+      box-shadow: 0 1.75rem 3.5rem rgba(0, 0.5, 0, 0.5);
+    }
+  
 
 .dice {
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 46.5rem;
   transform: translateX(-50%);
   height: 10rem;
@@ -228,6 +292,15 @@ html {
   display: none;
 }
 
+.dice-2 {
+  position: absolute;
+  left: 55%;
+  top: 46.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  display: block;
+}
 /* .player--winner {
   background-color: #2f2f2f;
 }
@@ -247,4 +320,10 @@ html {
 .win-end{
   visibility: hidden;
   
+}  
+
+/*  css for winning score input  */
+
+.btn--input-none{
+  display: none 
 }
