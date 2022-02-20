@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Page 2 Of Practices</title>
+</head>
+<body>
+    <div class="Games-btn">
+ <button class="tip-btn"> Click</button>
+  
+    </div>
+
+   <section class="rpsGame">
+    <h1>RPS GAME</h1>
+    <button class="btn--newRps"> New Game </button>
+
+    <div class="img-rps">
+        <img src="../JS PRojects/paper.png" alt="" id ="paper" width="150px" height="150px" onclick="rpsGame(this)">
+        <img src="../JS PRojects/rock.jpeg" alt="" id ="rock" width="150px" height="150px" onclick="rpsGame(this)">
+        <img src="../JS PRojects/sci.png" alt="" id ="scissors" width="150px" height="150px" onclick="rpsGame(this)">
+    </div>
+
+    <div class="playerConsole">
+        <h2>PLayer 1 </h2>
+        
+        <p id="player-Score">0</p>
+        <p class="cu-score"> Score</p>
+        <p id="Cpu-Score">0</p>
+
+        <h2>CPU</h2>
+        
+    </div>
+   </section>
+                            <!-- Budgety APp  -->
+
+<div class="budget-app-div">
+    <div class="budget--heading">
+<h4>Available Budget In <span class="current-month">Month</span></h4>
+    <p class="current-balance">cc </p>
+    </div>
+
+    <div class="inc-exp-div">
+        <div class="income-div">Income <span class="income-span"> Hi</span></div>
+        <div class="expenses-div">Expenses  <span class="expenses-span"> <span id="pctSpan"> HELLO</span> </span></div>
+    </div>
+   
+
+    <div class="budget--event">
+        <select class="add--type">
+           <option value="inc" selected class="plus--sign">+</option>
+           <option value="exp" class="minus--sign">-</option>
+        </select>
+        <input type="text" name="" placeholder="Add description" class="add--description">
+        <input type="text" name="" placeholder="Value" class="add--value">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle add--btn" viewBox="0 0 16 16">
+            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+          </svg>
+    </div>
+
+    <div class="budget--list">
+        <div class="income">
+
+            <h2 class="income--title">Income</h2>
+
+           
+                          <div class="income--list">
+                        <!--- 
+                <div class="item clearfix" id="income-0">
+                    <div class="item--description">Salary </div>
+                    <div class="right clearfix">
+                        <div class="item--value"> +2,1000</div>
+                        <div class="item--delete">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-check2-circle cancel--btn" viewBox="0 0 16 16">
+                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                        </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                ---->
+            </div>
+            
+
+        </div>
+
+
+
+
+        <div class="Expenses">
+
+            <h2 class="expenses--title">Expenses</h2>
+
+            <!-- 
+            <div class="Expenses--list">
+
+                <div class="item clearfix" id="expenses-0">
+                    <div class="item--description">Bought Milk </div>
+                    <div class="right clearfix">
+                        <div class="item--value"> - 2,1000</div>
+                        <div class="item--delete">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-check2-circle cancel--btn" viewBox="0 0 16 16">
+                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                        </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+             -->
+
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="../JS PRojects/JS/script.js"></script>
+    <script src="../JS PRojects/JS/game.js"></script>
+
+</body>
+</html>

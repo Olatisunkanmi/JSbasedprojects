@@ -1,4 +1,4 @@
-<html lang="en">
+ <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,7 @@
 <input type="text"  id="input" placeholder="Enter new To-do to list">
 <button id="enter"> Enter </button>
 <button id="clear">Clear All </button>
+
 
 <div class="list-div">
 <ul id="ul">
@@ -35,10 +36,13 @@
 
 
 <div>
-<button class="tip-btn" onclick="calcTip()">Click to Tip Waiter! </button>
+<button class="tip-btn" onclick="calcTip()"> Click to Tip Waiter! </button>
+<button class="tip-btn" onclick="displayPig()"> Click to Play Pig Game! </button>
+<a href="page2.html"><button class="tip-btn" > Click to Play <span>MOR GAMES</span> </button>
+</a>
 </div>
 </div>
-4
+
 
 </div>
 <div class="pig-game">
@@ -64,34 +68,21 @@
 </div>
 
 </div>
-
+<section class="pig-game-mini">
 <img src="../JS PRojects/Images/dice-2.png" alt="Playing dice" class="dice"/>
 <img src="../JS PRojects/Images/dice-3.png" alt="Playing dice" class="dice-2"/>
 
 
 
-<button class="btn btn--new">🔄 New game</button>
-<button class="btn btn--mode"> Mode </button>
-<button class="btn btn--roll" onclick="RollDice()">🎲 Roll dice</button>
-<button class="btn btn--hold">📥 Hold</button>
+<button class="btnnic btn--new">🔄 New game</button>
+
+
+<button class="btnnic btn--roll" onclick="RollDice()">🎲 Roll dice</button>
+<button class="btnnic btn--hold">📥 Hold</button>
 <input type="text" placeholder="Enter Placeholder" name="" id="btnn" class="btn--input" />
 
 <p id="enterWin">Enter Winning Score</p>
 <p id="winnngBoard"></p>
-
-<!-- Calculator -->
-<div class="calc">
-<section>
-<ul class="calc-list">
-<button> <li id="one">1</li></button>  
-<button> <li id="two">2</li></button> 
-<button> <li id="three">3</li></button> 
-<button> <li id="four">4</li></button> 
-<button> <li id="equals">=</li></button> 
-<button> <li id="plus">+</li> </button>
-<button> <li id="display"></li> </button>
-
-</ul>
 
 </section>
 
